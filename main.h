@@ -16,18 +16,22 @@ int main() {
   std::cout << "Input the second operand: ";
   std::cin >> b;
 
+  //Operation for addition.
   if(operation == "+" || operation == "plus"){
     math = a + b;
     std::cout << "The computed value of: " << a << "+" << b << " is " << math;
   }
+  //Operation for subtraction.
   else if(operation == "-" || operation == "minus"){
     math = a-b;
     std::cout << "The computed value of: " << a << "-" << b << " is " << math;
   }
+  //Operation for multiplication.
   else if(operation == "*" || operation == "mul"){
     math = a*b;
     std::cout << "The computed value of: " << a << "*" << b << " is " << math;
   }
+  //Operation for division.
   else if(operation == "/" || operation == "div"){
     math = a/b;
     std::cout << "The computed value of: " << a << "/" << b << " is " << math;
