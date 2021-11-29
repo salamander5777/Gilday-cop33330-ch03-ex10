@@ -6,15 +6,10 @@
 #include <iostream>
 
 //Chapter 3, Exercise #10 - (Program that takes in an operation and two operands and then outputs the resultant.)
-int main() {
-  std::string operation;
-  double a, b, math;
-  std::cout << "Input an operation: ";
-  std::cin >> operation;
-  std::cout << "Input the first operand: ";
-  std::cin >> a;
-  std::cout << "Input the second operand: ";
-  std::cin >> b;
+
+//This method verifies the input of the operation, and will solve for the solution.
+void solution(std::string operation, double a, double b){
+  double math;
 
   //Operation for addition.
   if(operation == "+" || operation == "plus"){
@@ -36,4 +31,4 @@ int main() {
     math = a/b;
     std::cout << "The computed value of: " << a << "/" << b << " is " << math;
   }
-} 
+}
